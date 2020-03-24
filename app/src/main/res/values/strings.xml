@@ -12,4 +12,9 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+    <string-array name="languageValues">
+        <item>Romanian</item>
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
 </resources>
