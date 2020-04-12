@@ -10,6 +10,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.photolate.R;
@@ -30,6 +32,9 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), "Saved! " + translateFrom + " to " + translateTo, Toast.LENGTH_LONG).show();
             }
         });
+        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setSubtitle("Choose preferred languages");
 
         translateFromSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
